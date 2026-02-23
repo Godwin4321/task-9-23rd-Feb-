@@ -1,0 +1,37 @@
+# Node / Strapi
+node_modules/
+build/
+.cache/
+.tmp/
+.env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+.dockerignore
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.swp
