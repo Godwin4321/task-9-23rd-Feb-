@@ -18,7 +18,7 @@ resource "aws_ecs_task_definition" "task" {
 
   container_definitions = jsonencode([{
     name  = "strapi"
-    image = "775112909184.dkr.ecr.us-east-1.amazonaws.com/strapi-app:v3"
+    image = "${var.ecr_image_url}"
 
     portMappings = [{
       containerPort = 1337
