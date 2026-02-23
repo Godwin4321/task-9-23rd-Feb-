@@ -5,6 +5,8 @@ on:
     workflows: ["CI - Build & Push Image"]
     types:
       - completed
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -31,5 +33,5 @@ jobs:
       - name: Terraform Apply
         run: |
           terraform apply -auto-approve \
-            -var="ecr_image_url=775112909184.dkr.ecr.us-east-1.amazonaws.com/strapi-app:${{ github.event.workflow_run.head_sha }}"
+          -var="ecr_image_url=775112909184.dkr.ecr.us-east-1.amazonaws.com/strapi-app:${{ github.event.workflow_run.head_sha }}"
         working-directory: terraform
