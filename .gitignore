@@ -15,9 +15,7 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
-# Docker
-Dockerfile
-.dockerignore
+
 
 # Terraform
 .terraform/
